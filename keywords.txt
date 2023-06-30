@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For VineerTask
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+VineerTask	KEYWORD1
+Task	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+tick	KEYWORD2
+add	KEYWORD2
+execute	KEYWORD2
+ms_delay	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
