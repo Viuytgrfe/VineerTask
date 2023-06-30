@@ -17,6 +17,7 @@ tick	KEYWORD2
 add	KEYWORD2
 execute	KEYWORD2
 ms_delay	KEYWORD2
+getLoad	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

@@ -1,12 +1,10 @@
 #pragma once
 
-#define ASYNC 1
-#define TIMER 2
-#define LATER 3
 
 class Task {
 public:
     int _priority;
+    int priority_counter;
     int delay;
     int tmr;
     void (*_func)(Task*);
@@ -15,10 +13,15 @@ public:
         _func = func;
         delay = 0;
         tmr = 0;
+        priority_counter = 0;
     }
     bool execute() {
         if(delay <= 0) {
-            _func(this);
+            priority_counter += _priority;
+            if(priority_counter >= 100) {
+                priority_counter %= 100;
+                _func(this);
+            }
             return true;
         }
         else {
